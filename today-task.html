@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+      //  task1
+    let p=document.createElement("p")
+    p.innerText="Welcome to JavaScript DOM manipulation";
+    document.body.appendChild(p);
+
+      //  task2
+    let div=document.createElement("div")
+    let h1=document.createElement("h1")
+    let h2=document.createElement("h2")
+     h1.innerText="Main Heading";
+     h2.innerText="SubHeading";
+    document.body.appendChild(div);
+   div.appendChild(h1);
+     div.appendChild(h2);
+
+
+      //  task3
+     let ul=document.createElement("ul")
+    let li1=document.createElement("li")
+    let li2=document.createElement("li")
+    let li3=document.createElement("li")
+    li1.innerText="hi";
+    li2.innerText="hello";
+    li3.innerText="i am sravya";
+
+    document.body.appendChild(ul);
+   ul.appendChild(li1);
+   ul.appendChild(li2);
+   ul.appendChild(li3);
+
+
+
+       //  task4
+   let table = document.createElement("table");
+        let row1 = document.createElement("tr");
+        let row2 = document.createElement("tr");
+        // Row1 -> Heading
+        let heading1 = document.createElement("th");
+        let heading2 = document.createElement("th");
+        // Row2 -> Table Data
+        let row2td1 = document.createElement("td");
+        let row2td2 = document.createElement("td");
+
+          // heading
+          heading1.innerText = "Name";
+        heading2.innerText = "Age";
+
+        // row2 data
+        row2td1.innerText = "sravya";
+        row2td2.innerText = "20";
+
+
+        row1.appendChild(heading1);
+        row1.appendChild(heading2);
+
+        row2.appendChild(row2td1);
+        row2.appendChild(row2td2);
+        table.appendChild(row1);
+        table.appendChild(row2);
+        document.body.appendChild(table);
+
+
+      //  task5
+
+        let div1=document.createElement("div")
+        let img=document.createElement("img")
+        let p1=document.createElement("p")
+        img.src="https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg" ;
+        p1.innerText = "This is Tiger";
+        div.appendChild(img);
+        div.appendChild(p1);
+        document.body.appendChild(div);
+
+
+        let ol1=document.createElement("ol")
+    let lis1=document.createElement("li")
+    let lis2=document.createElement("li")
+    let lis3=document.createElement("li")
+    let ol2=document.createElement("ol")
+    let list1=document.createElement("li")
+    let list2=document.createElement("li")
+    let list3=document.createElement("li")
+    lis1.innerText="hi";
+    lis2.innerText="hello";
+    lis3.innerText="i am sravya";
+    list1.innerText="hi";
+    list2.innerText="hello";
+    list3.innerText="i am sravya";
+
+    document.body.appendChild(ol1);
+   ol1.appendChild(lis1);
+   ol1.appendChild(lis2);
+   ol1.appendChild(lis3);
+   lis3.appendChild(ol2);
+   ol2.appendChild(list1);
+   ol2.appendChild(list2);
+   ol2.appendChild(list3);
+
+
+   
+    </script>
+  
+</body>
+</html>
